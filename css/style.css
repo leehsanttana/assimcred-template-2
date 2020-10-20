@@ -1,0 +1,140 @@
+:root{
+    --dark-green: #08404d;
+    --btn: #042127;
+    --btn-hover: #010d0f;
+    --orange: #ff6600;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #ececec;
+}
+
+/* cores-textos */
+
+.text-orange{
+    color: var(--orange);
+}
+
+/* Backgrounds */
+
+.bg-grey{
+    background: var(--grey) !important;
+}
+
+.bg-dark-green{
+    background-color: var(--dark-green);
+}
+
+.bg-header{
+    background: url(../img/background3.jpg);
+    background-size: cover;
+    height: 120vh;
+}
+
+.bg-section{
+    background: url(../img/background2.jpg);
+    background-size: cover;
+}
+
+/* Botões */
+
+.btn-dark-green{
+    background-color: var(--btn) !important;
+    border-color: var(--btn) !important;
+    color: var(--orange) !important;
+}
+
+.btn-dark-green:hover{
+    background-color: var(--btn-hover) !important;
+    border-color: var(--btn-hover) !important;
+    color: var(--orange) !important;
+}
+
+.btn-orange{
+    background-color: var(--orange) !important;
+    border-color: var(--orange) !important;
+    color: var(--white) !important;
+}
+
+.btn-orange:hover{
+    background-color: var(--btn-hover) !important;
+    border-color: var(--btn-hover) !important;
+    color: var(--orange) !important;
+}
+
+.btn-assim{
+    border: solid var(--orange) 2px !important;
+    transition: .5s ease !important;
+}
+
+.btn-assim:hover{
+    transform: scale(0.9);
+}
+
+/* sessão main-nav */
+
+.bg-nav{
+    background-color: transparent;
+    transition: .5s ease;
+}
+
+.bg-change-nav{
+    background-color: var(--dark-green);
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+/* sessão header */
+
+.container-fluid{
+    padding-left: 0 !important;
+}
+
+.col{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 20% !important;
+}
+
+.nav-item a{
+    font-size: 1.2rem;
+}
+
+.nav-link{
+    color: var(--orange) !important;
+}
+
+.slogan{
+    width: 350px;
+    margin-top: 80px;
+}
+
+.group-card{
+    position: relative !important;
+    right: 160px;
+}
+
+.card{
+    width: 220px;
+    border-radius: 10% !important;
+}
+
+/* Sessão clientes */
+
+.card-client{
+    width: 100%;
+    border-radius: 5px !important;
+    box-shadow: 3px 3px 10px 3px rgba(204,204,204,1);
+}
+
+.carousel-indicators li{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: var(--btn) !important;
+}
+
+.carousel-indicators .active {
+    background-color: var(--orange) !important;
+}
