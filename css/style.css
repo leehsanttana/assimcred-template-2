@@ -3,6 +3,7 @@
     --btn: #042127;
     --btn-hover: #010d0f;
     --orange: #ff6600;
+    --orange-hover: #f16101;
     --black: #000000;
     --white: #ffffff;
     --grey: #ececec;
@@ -38,15 +39,15 @@
 /* Botões */
 
 .btn-dark-green{
-    background-color: var(--btn) !important;
-    border-color: var(--btn) !important;
-    color: var(--orange) !important;
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green) !important;
+    color: var(--white) !important;
 }
 
 .btn-dark-green:hover{
-    background-color: var(--btn-hover) !important;
-    border-color: var(--btn-hover) !important;
-    color: var(--orange) !important;
+    background-color: var(--btn) !important;
+    border-color: var(--btn) !important;
+    color: var(--white) !important;
 }
 
 .btn-orange{
@@ -56,18 +57,21 @@
 }
 
 .btn-orange:hover{
-    background-color: var(--btn-hover) !important;
-    border-color: var(--btn-hover) !important;
-    color: var(--orange) !important;
+    background-color: var(--orange-hover) !important;
+    border-color: var(--orange-hover) !important;
+    color: var(--white) !important;
 }
 
-.btn-assim{
-    border: solid var(--orange) 2px !important;
+.btn-ac{
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.45);
+    border: transparent !important;
+    border-radius:8px;
+    background: transparent !important;
     transition: .5s ease !important;
 }
 
-.btn-assim:hover{
-    transform: scale(0.9);
+.btn-ac:hover{
+    transform: scale(0.96);
 }
 
 /* sessão main-nav */
@@ -79,7 +83,6 @@
 
 .bg-change-nav{
     background-color: var(--dark-green);
-    transform: scale(1.05);
     transition: .5s ease;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
 }
@@ -88,13 +91,6 @@
 
 .container-fluid{
     padding-left: 0 !important;
-}
-
-.col{
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    top: 20% !important;
 }
 
 .nav-item a{
@@ -110,14 +106,8 @@
     margin-top: 80px;
 }
 
-.group-card{
-    position: relative !important;
-    right: 160px;
-}
-
 .card{
-    width: 220px;
-    border-radius: 10% !important;
+    border-radius: 30px!important;
 }
 
 /* Sessão clientes */
@@ -126,6 +116,8 @@
     width: 100%;
     border-radius: 5px !important;
     box-shadow: 3px 3px 10px 3px rgba(204,204,204,1);
+    background: #08404d;
+    color: var(--white);
 }
 
 .carousel-indicators li{
@@ -138,3 +130,97 @@
 .carousel-indicators .active {
     background-color: var(--orange) !important;
 }
+
+
+/* Sessão orçamento */
+
+.form-orcamento{
+    border-radius: 10px;
+    border: 2px solid var(--grey);
+    background: var(--grey);
+}
+
+.range-title{
+    padding: 1rem;
+    color: var(--grey);
+    border-radius: 10px 10px 0 0;
+    background: var(--orange);
+}
+
+.result-range{
+    padding: .8rem;
+    color: var(--dark-green);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* .btn-form{
+    position: relative !important;
+    top: 100px;
+} */
+
+.custom-range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 102, 0, 0.25)!important;
+}
+  
+.custom-range:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem  rgba(255, 102, 0, 0.25)!important;
+}
+  
+.custom-range:focus::-ms-thumb {
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255, 102, 0, 0.25)!important;
+}
+
+.custom-range::-webkit-slider-thumb {
+    background-color: #ff6600 !important;
+}
+
+.custom-range::-webkit-slider-thumb:active {
+    background-color: #fdc29a !important;
+}
+
+.custom-range::-webkit-slider-runnable-track {
+    background-color: rgba(8, 64, 77, .25) !important;
+}
+
+.footer-range{
+    padding: 1rem;
+}
+
+.input.invalid {
+    border-color: #ff4e4e;
+}
+
+.input.valid {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+  }
+  
+  /* Hide all steps by default: */
+.tab {
+    display: none;
+    height: auto;
+}
+
+  
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+.step.active {
+    opacity: 1;
+}
+
+#sendMessageButton{
+    display: none;
+}
+  
+  /* Mark the steps that are finished and valid: */
