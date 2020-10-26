@@ -26,15 +26,19 @@
 }
 
 .bg-header{
-    background: url(../img/background3.jpg);
+    background: var(--grey);
     background-size: cover;
     height: 120vh;
 }
 
-.bg-section{
-    background: url(../img/background2.jpg);
-    background-size: cover;
-}
+@media (min-width: 768px) {
+    .bg-header{
+        background: url(../img/background3.jpg);
+        background-size: cover;
+        height: 120vh;
+    }
+  }
+
 
 /* Botões */
 
@@ -89,9 +93,11 @@
 
 /* sessão header */
 
-.container-fluid{
-    padding-left: 0 !important;
+header{
+    height: auto !important;
 }
+
+
 
 .nav-item a{
     font-size: 1.2rem;
@@ -103,7 +109,7 @@
 
 .slogan{
     width: 350px;
-    margin-top: 80px;
+    margin-top: 2rem;
 }
 
 .card{
