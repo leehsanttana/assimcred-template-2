@@ -22,7 +22,7 @@ let $range = document.querySelector('#range'),
 $value = document.querySelector('#resultadoTempoReal');
 $value2 = document.querySelector('#resultadoTempoReal2');
 
-$range.addEventListener('range', function() {
+$range.addEventListener('input', function() {
     $value.textContent = this.value;
     $value2.textContent = this.value;
 });
@@ -104,28 +104,4 @@ function fixStepIndicator(n) {
   }
   //... and adds the "active" class on the current step:
   x[n].className += " active";
-}
-
-function scrollNav() {
-  $('.nav-link').click(function(){
-    $(".active").removeClass("active");     
-    $(this).addClass("active");
-    
-    $('html, body').stop().delay(200).animate({
-      scrollTop: $($(this).attr('href')).offset().top  -100
-    }, 600);
-    return false;
-  });
-}
-
-function scrollNav() {
-  $('.navbar-brand').click(function(){
-    $(".active").removeClass("active");     
-    $(this).addClass("active");
-    
-    $('html, body').stop().delay(200).animate({
-      scrollTop: $($(this).attr('href')).offset().top  -100
-    }, 600);
-    return false;
-  });
 }

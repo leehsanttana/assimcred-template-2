@@ -10,9 +10,9 @@
 </head>
 <body id="top">
 
-    <nav class="navbar navbar-expand-md fixed-top bg-nav" id="bgNav">
-        <div class="container">
-            <a class="navbar-brand" href="#top" onclick="scrollNav()"><img src="img/logo.png" alt="" ></a>
+    <nav class="navbar navbar-expand-md fixed-top px-5 bg-nav" id="bgNav">
+        
+            <a class="navbar-brand" href="#top"><img src="img/logo.png" alt="" ></a>
       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class=""><i class="fas fa-bars text-light"></i></span>
@@ -25,7 +25,7 @@
                 </li>
             </ul>
         </div>
-        </div>
+        
     </nav>
     
     <header class="container-fluid bg-header p-5">
@@ -37,41 +37,43 @@
                     <h1 style="margin-top: 4rem;">Crédito Consignado</h1>
                     <h1 class="text-orange">É assim que se faz!</h1>
 
-                    <div class="slogan">
-                        <h5>
-                            Na AssimCred.com você consegue acompanhar o andamento do seu crédito em tempo real!
-                            <span class="text-orange">Crie sua conta </span> e começe a fazer parte do nosso time!  
-                        </h5>
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5>
+                                Na AssimCred.com você consegue acompanhar o andamento do seu crédito em tempo real!
+                                <span class="text-orange">Crie sua conta </span> e começe a fazer parte do nosso time!  
+                            </h5>
+                        </div>
                     </div>
 
                     <div class="row mt-5 d-flex justify-content-center">
-                        <div class="col-md-4 col-10 mb-4">
+                        <div class="col-md-4 col-12 mb-4">
                             <div class="card pt-4 shadow" style="height: 330px;">
                                 <i class="fas fa-dollar-sign card-img-top text-center text-orange" style="font-size: 3rem;"></i>
                                 <div class="card-body">
                                   <h6 class="card-title">CRÉDITO NOVO</h6>
                                   <p class="card-text">Solicite o valor que você necessita, e pague em até 81x.</p>
-                                  <a href="#simular" class="nav-link" onclick="scrollNav()">Simule Agora!</a>
+                                  <a href="#simular" class="nav-link">Simule Agora!</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-10 mb-4">
+                        <div class="col-md-4 col-12 mb-4">
                             <div class="card pt-4 shadow" style="height: 330px;">
                                 <i class="fas fa-dollar-sign card-img-top text-center text-orange" style="font-size: 3rem;"></i>
                                 <div class="card-body">
                                   <h6 class="card-title">REFINANCIAMENTO</h6>
                                   <p class="card-text">Diminua a taxa de juros de seus contratos e ainda receba um troco por isso.</p>
-                                  <a href="#simular" class="nav-link" onclick="scrollNav()">Simule Agora!</a>
+                                  <a href="#simular" class="nav-link">Simule Agora!</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-10 mb-4">
+                        <div class="col-md-4 col-12 mb-4">
                             <div class="card pt-4 shadow" style="height: 330px;"> 
                                 <i class="fas fa-dollar-sign card-img-top text-center text-orange" style="font-size: 3rem;"></i>
                                 <div class="card-body">
                                   <h6 class="card-title">CARTÃO CONSIGNADO</h6>
                                   <p class="card-text">Solicite um cartão conquistada e tenha a sua disposição um cartão de crédito para qualquer emergência.</p>
-                                  <a href="#simular" class="nav-link" onclick="scrollNav()">Simule Agora!</a>
+                                  <a href="#simular" class="nav-link">Simule Agora!</a>
                                 </div>
                             </div>
                         </div>
@@ -122,13 +124,13 @@
                 </div>
             </div>
             
-                <a class="btn btn-orange mt-5 mx-auto d-block col-3 p-2 nav-link text-light " href="#simular" onclick="scrollNav()">Simule agora!</a>
+                <a class="btn btn-orange mt-5 mx-auto d-block col-md-3 col-10 p-2 nav-link text-light click" href="#simular">Simule agora!</a>
 
     </section>
 
-    <section class="container-fluid p-5 bg-grey">
+    <section class="container-fluid py-5 bg-grey">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-12">
                 <div id="demo" class="carousel slide" data-ride="carousel">
 
                     <ul class="carousel-indicators">
@@ -210,7 +212,7 @@
         </div>
     </section>
 
-    <section class="container-fluid bg-dark-green text-light p-5" id="simular">
+    <section class="container-fluid bg-dark-green text-light py-5" id="simular">
         
             <div class="row">
                 <div class="col-md-12">
@@ -252,9 +254,6 @@
                                     De quanto você precisa?
                                     <input type="range" class="custom-range" id="range" min="500" max="5000.00" value="33" step="50" required="required" data-validation-required-message="Por favor, insira o valor desejável.">
                                     <p>R$<span id="resultadoTempoReal">500</span></p>
-                                    <div class="row">
-                                        
-                                    </div>
                                 </div>
                             </div>
     
@@ -369,15 +368,6 @@
         </div>
     </section>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-12">
-
-                
-            </div>
-        </div>
-    </div>
-
     <script src="https://kit.fontawesome.com/4783fe1c33.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core JS--> 
@@ -396,13 +386,3 @@
     
 </body>
 </html>
-
-<!-- <div class="col-md-">
-    <div class="mr-2 mb-4 p-2 rounded sombra">
-    <h4>Crédito <i class="fas fa-credit-card"></i></h4>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quisquam, recusandae? Culpa mollitia ipsa ab sed suscipit?
-        Sequi in, dolores.
-    </p>
-</div> -->
