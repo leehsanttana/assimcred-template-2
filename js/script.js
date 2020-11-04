@@ -23,8 +23,17 @@ $value = document.querySelector('#resultadoTempoReal');
 $value2 = document.querySelector('#resultadoTempoReal2');
 
 $range.addEventListener('input', function() {
-    $value.textContent = this.value;
-    $value2.textContent = this.value;
+    $value.textContent = 'R$' + this.value;
+
+    if($value.textContent == 'R$' + 100000 ) {
+      $value.textContent = 'Mais de R$100000'
+    }
+
+    $value2.textContent = 'R$' + this.value;
+    if($value2.textContent == 'R$' + 100000 ) {
+      $value2.textContent = 'Mais de R$100000'
+    }
+    
 });
 
 /* MULTI-STEP */
