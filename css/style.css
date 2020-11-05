@@ -13,6 +13,11 @@ html{
     scroll-behavior: smooth;
 }
 
+a:hover{
+    text-decoration: none !important;
+    color: #f16101 !important;
+}
+
 /* cores-textos */
 
 .text-orange{
